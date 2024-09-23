@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "DamionDutch",
+    "motivations": "I’m a freelancer in the IT space and can be a bridge between devs and degens. I’m motivated because not everybody in the community believes governance will change the old Cardano ways and I hope I can change there minds. I believe in having a vote will help make a change. ",
+    "objectives": "As a Cardano community member with ears to part of the community on X. I want to make a difference for me and my community. Not by talking and complaining about stuff but also acting upon what we talk about.",
+    "paymentAddress": "addr1qxmwedpnmh76mkxa9y86mdaqgdvgv24jdq89x4kd7hhcprya9qy3wd9d4acz982sauru8jvmsm90ek7eq87483q8j99qs4zsas",
+    "qualifications": "Human;\nCommunity Member;\n",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "X.com",
+        "uri": "https://x.com/DamionDutch"
+      },
+      {
+        "@type": "Identity",
+        "label": "Join a space on X where i am speaker and ask a question",
+        "uri": "https://x.com/DamionDutch"
+      }
+    ]
+  }
+}
